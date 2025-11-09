@@ -15,7 +15,10 @@ ugv_homework/
 └── src/
     └── examples/   # ROS 2 官方示例（rclcpp、rclpy、launch_testing）
 ```
-根据需求，你可以继续在 `src/` 下新增自定义包，或将 `examples` 拆分为独立子模块。
+根据需求，你可以继续在 `src/` 下新增自定义包，或将 `examples` 拆分为独立子模块。`src/examples` 是通过 `ros2/examples` 官方仓库的 `jazzy` 分支克隆而来：
+```bash
+git clone https://github.com/ros2/examples src/examples -b jazzy
+```
 
 ## 环境依赖
 - Ubuntu 24.04 + ROS 2 Jazzy Geochelone
