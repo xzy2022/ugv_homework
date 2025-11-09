@@ -18,13 +18,20 @@ ugv_homework/
 根据需求，你可以继续在 `src/` 下新增自定义包，或将 `examples` 拆分为独立子模块。
 
 ## 环境依赖
-- Ubuntu 22.04 + ROS 2 Humble（或更高版本，需匹配系统）
-- Python ≥ 3.10
+- Ubuntu 24.04 + ROS 2 Jazzy Geochelone
+- Python 3.12.3（Jazzy 默认）
+- Gazebo Harmonic（`gz-sim` 系列）
 - colcon、rosdep、vcstool 等基础工具
 
-快速安装示例（以 Humble 为例）：
+快速安装示例（以 Jazzy 为例）：
 ```bash
-sudo apt update && sudo apt install ros-humble-desktop python3-colcon-common-extensions python3-rosdep python3-vcstool
+sudo apt update && sudo apt install \
+  ros-jazzy-desktop \
+  ros-jazzy-gazebo-ros-pkgs \
+  python3-colcon-common-extensions \
+  python3-rosdep \
+  python3-vcstool \
+  gz-harmonic
 sudo rosdep init || true
 rosdep update
 ```

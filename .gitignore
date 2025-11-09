@@ -6,6 +6,16 @@ log/
 colcon-core/
 log_latest
 
+# === ROS 2 运行数据 / Gazebo ===
+rosbag2_*/
+*.db3
+*.sqlite3
+*.trace
+rosbag2_metadata.yaml
+gazebo.log
+gz/
+.gazebo/
+
 # === 依赖下载 / 临时文件 ===
 *.log
 *.tmp
